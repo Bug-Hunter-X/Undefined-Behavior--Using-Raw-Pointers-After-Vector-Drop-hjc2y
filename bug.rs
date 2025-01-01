@@ -1,0 +1,1 @@
+fn main() {    let mut v = vec![1, 2, 3];    let ptr = v.as_mut_ptr();    unsafe {        // This is UB: v is dropped, invalidating ptr    }    // Use after free!    unsafe {        *ptr = 10;    }}
