@@ -1,0 +1,1 @@
+fn main() {    let mut v = vec![1, 2, 3];    // Safe approach using references.    for i in v.iter_mut() {        *i *= 2;    }    println!("{:?}", v);    //Alternative safe approach using smart pointer.    let v = vec![1,2,3];    let v_ref = &mut v;    for i in v_ref.iter_mut() {        *i *= 2;    }    println!("{:?}", v);}
