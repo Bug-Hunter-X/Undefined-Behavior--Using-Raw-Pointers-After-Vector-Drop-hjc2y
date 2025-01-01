@@ -1,0 +1,1 @@
+This repository demonstrates a common, yet dangerous, error in Rust: using a raw pointer after the underlying data has been deallocated.  The `bug.rs` file contains code that leads to undefined behavior. The `bugSolution.rs` file presents a safe alternative using references or smart pointers.
